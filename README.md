@@ -2,7 +2,7 @@
 
 ## Répartition des tâches
 
-| Command | Description |
+| Collaborateurs | Liste des éléments |
 | --- | --- |
-| `Emilie` | List all *new or modified* files |
-| `Tommy` | Show file differences that **haven't been** staged |
+| `Emilie` | Liste |
+| `Tommy` | Liste |
