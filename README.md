@@ -17,11 +17,11 @@ Rappel : un wireframe indique seulement l’emplacement des composants, pas leur
 
 ## Description
 Ce travail porte sur les aspects suivants de l’intégration web :
-● Utiliser Tailwind CSS pour le style utilitaire et la mise en page rapide.
-● Intégration responsive à l’aide de grille
-● Méthodologie BEM
-● L’accessibilité web
-● Les animations
+(*) Utiliser Tailwind CSS pour le style utilitaire et la mise en page rapide.
+(*) Intégration responsive à l’aide de grille
+(*) Méthodologie BEM
+(*) L’accessibilité web
+(*) Les animations
 
 
 ## Maquette
@@ -57,7 +57,7 @@ environ 500px de largeur. (15%)
 - [ ] Dans votre projet GitHub, ajoutez mon utilisateur personnel (ainsi que votre
 coéquipier)
 
-#Animations (15%)
+# Animations (15%)
 - [ ] Le site doit contenir un minimum de deux animations javascript
 - [ ] Le site doit contenir un minimum de deux animations CSS
 - [ ] Vous devez répertorier ces animations dans le .Readme du projet
