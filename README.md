@@ -17,11 +17,11 @@ Rappel : un wireframe indique seulement l’emplacement des composants, pas leur
 
 ## Description
 Ce travail porte sur les aspects suivants de l’intégration web :
-(*) Utiliser Tailwind CSS pour le style utilitaire et la mise en page rapide.
-(*) Intégration responsive à l’aide de grille
-(*) Méthodologie BEM
-(*) L’accessibilité web
-(*) Les animations
+- Utiliser Tailwind CSS pour le style utilitaire et la mise en page rapide.
+- Intégration responsive à l’aide de grille
+- Méthodologie BEM
+- L’accessibilité web
+- Les animations
 
 
 ## Maquette
