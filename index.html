@@ -4,22 +4,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Gabarit de site web</title>
   <meta name="description" content="Description site">
-
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
-
   <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </head>
 
 <body>
-
   <header>
-
     <!-- NAV BAR -->
     <nav class="bg-neutral-primary w-full z-20 top-0 start-0 border-b border-default">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -47,21 +42,19 @@
               <a href="tournage.html"
                 class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Tournage</a>
             </li>
-
           </ul>
         </div>
       </div>
     </nav>
-
   </header>
 
-  <main class="m-2">
 
+  <!-- PRESENTATION -->
+  <main class="m-2">
     <section class="max-w-7xl mx-auto px-6 py-20">
       <div class="flex flex-col md:flex-row items-center justify-between gap-12">
         <div class="flex flex-col gap-6 max-w-md">
           <h1 class="text-5xl font-bold">Présentation de l'oeuvre</h1>
-
           <p>Harry Potter est une série de films fantastiques adaptée des romans de J. K. Rowling. Elle raconte
             l’histoire
             de
@@ -75,16 +68,14 @@
               class="border rounded-3xl border-ra border-gray-400 p-1 hover:text-white hover:bg-blue-500 ">Sélectionner
               la
               quantité</button>
-
             <button class="border rounded-3xl border-ra border-gray-400 p-1 hover:text-white hover:bg-blue-500 ">Acheter
               maintenant</button>
           </div>
         </div>
 
+
+
         <!-- CARROUSEL -->
-
-
-
         <div id="default-carousel" class="relative w-full max-w-96" data-carousel="slide">
           <!-- Carousel wrapper -->
           <div class="relative h-56 overflow-hidden rounded-base md:h-96">
@@ -159,12 +150,42 @@
 
     </section>
 
+    <!-- IMAGES ET EXTRAITS -->
     <section>
-      <h2>Images et extraits</h2>
+      <h2 class="text-4xl font-bold flex flex-col items-center">Images et extraits</h2>
+      <p class="flex flex-col items-center">Voici des images et extraits des 8 films de Harry Potter</p>
+      <form action="">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Courriel</label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          type="email" name="email" id="email">
+        <button class="border rounded-3xl border-ra border-gray-400 p-1 hover:text-white hover:bg-blue-500"
+          type="submit">S'inscrire</button>
+      </form>
 
-      <p>Voici des images et extraits des 8 films de Harry Potter</p>
+      <!-- PHOTOS ET VIDEO -->
+
+      <div class="max-w-5xl mx-auto p-4 space-y-6">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+          <img src="img/image1.jpg" class="w-full h-60 object-cover rounded-lg" alt="image1">
+          <img src="img/image2.jpg" class="w-full h-60 object-cover rounded-lg" alt="image2">
+          <img src="img/image3.jpg" class="w-full h-60 object-cover rounded-lg" alt="image3">
 
 
+
+        </div>
+
+        <div class="w-full">
+          <video class="w-full rounded-lg" controls>
+            <source src="video/theme.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+          </video>
+
+        </div>
+
+      </div>
 
 
     </section>
