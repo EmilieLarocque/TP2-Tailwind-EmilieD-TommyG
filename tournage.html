@@ -13,6 +13,7 @@
 
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
+
 </head>
 
 <body>
@@ -57,43 +58,42 @@
      <!-- section tournage -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
 
-      <div class="bg-gray-200 p-4">
-        <img src="/media/tournage2.jpg" alt="Tournage" class="object-cover h-600 w-full" />
+      <div class="bg-gray-200 p-4 tournage-bloc__media">
+        <img src="/media/tournage2.jpg" alt="Tournage" class="object-cover h-600 w-full tournage-bloc__image" />
       </div>
 
       <div>
-        <h1 class="text-3xl font-bold text-gray-900">Page tournage</h1>
+        <h1 class="text-3xl font-bold text-gray-900">Le tournage d'Harry Potter</h1>
 
         <p class="mt-4 text-gray-700">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
+          Entre 2001 et 2011, huit films ont donné vie à l'univers de J.K. Rowling, principalement tournés aux studios de Leavesden, en Angleterre. Des décors grandeur nature du Poudlard Express aux effets visuels de Quidditch, la saga reste l'une des productions les plus marquantes du cinéma fantastique.
         </p>
 
         <div class="grid grid-cols-2 gap-4">
           <div class="mt-4">
-            <div class="text-2xl font-bold text-green-500">44M</div>
-            <span class="text-gray-700">sold for </span>
+            <div class="text-base font-bold text-green-500">8</div>
+            <span class="text-gray-700 text-sm leading-none">films tournés (2001-2011)</span>
           </div>
 
           <div class="mt-4">
-            <div class="text-2xl font-bold text-green-500">324B</div>
-            <span class="text-gray-700">daily content uploaded</span>
+            <div class="text-base font-bold text-green-500">7,7G$</div>
+            <span class="text-gray-700 text-sm leading-none">de recettes mondiales au box-office</span>
           </div>
 
           <div class="mt-4">
-            <div class="text-2xl font-bold text-green-500">230K</div>
-            <span class="text-gray-700">hourly active users</span>
+            <div class="text-base font-bold text-green-500">24</div>
+            <span class="text-gray-700 text-sm leading-none">nominations aux BAFTA</span>
           </div>
 
           <div class="mt-4">
-            <div class="text-2xl font-bold text-green-500">12</div>
-            <span class="text-gray-700">awards won</span>
+            <div class="text-base font-bold text-green-500">12</div>
+            <span class="text-gray-700 text-sm">nominations aux Oscars</span>
           </div>
         </div>
 
         <div class="mt-4">
           <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hover:shadow-lg transition duration-300">
-            learn more
+            En savoir plus
           </button>
         </div>
       </div>
@@ -103,29 +103,29 @@
     <hr class="my-8">
 
    <!-- section 2 - tournage -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div class="bg-gray-200 p-4">
-        <img src="/media/behind1.jpg" alt="Behind the scenes" class="w-full h-auto" />
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 tournage-galerie">
+      <div class="bg-gray-200 p-4 tournage-item">
+        <img src="/media/behind1.jpg" alt="Behind the scenes" class="w-full h-auto tournage-item__image" />
       </div>
 
-      <div class="bg-gray-200 p-4">
-        <img src="/media/behind2.jpg" alt="Behind the scenes" class="w-full h-auto" />
+      <div class="bg-gray-200 p-4 tournage-item">
+        <img src="/media/behind2.jpg" alt="Behind the scenes" class="w-full h-auto tournage-item__image" />
       </div>
 
-      <div class="bg-gray-200 p-4">
-        <img src="/media/behind3.jpg" alt="Behind the scenes" class="w-full h-auto" />
+      <div class="bg-gray-200 p-4 tournage-item">
+        <img src="/media/behind3.jpg" alt="Behind the scenes" class="w-full h-auto tournage-item__image" />
       </div>
 
-      <div class="bg-gray-200 p-4">
-        <img src="/media/behind4.jpg" alt="Behind the scenes" class="w-full h-auto" />
+      <div class="bg-gray-200 p-4 tournage-item">
+        <img src="/media/behind4.jpg" alt="Behind the scenes" class="w-full h-auto tournage-item__image" />
       </div>
 
-      <div class="bg-gray-200 p-4">
-        <img src="/media/behind5.jpg" alt="Behind the scenes" class="w-full h-auto" />
+      <div class="bg-gray-200 p-4 tournage-item">
+        <img src="/media/behind5.jpg" alt="Behind the scenes" class="w-full h-auto tournage-item__image" />
       </div>
 
-      <div class="bg-gray-200 p-4">
-        <img src="/media/behind6.jpg" alt="Behind the scenes" class="w-full h-auto" />
+      <div class="bg-gray-200 p-4 tournage-item">
+        <img src="/media/behind6.jpg" alt="Behind the scenes" class="w-full h-auto tournage-item__image" />
       </div>
     </div>
 
@@ -133,10 +133,9 @@
 
     <!-- section 2 - faq -->
     <div>
-      <h1 class="text-3xl font-bold text-gray-900 text-center">Section 2</h1>
-      <p class="mt-4 text-gray-700 text-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
+      <h1 class="text-3xl font-bold text-gray-900 text-center">Foire aux questions</h1>
+      <p class="mt-4 text-gray-700 text-center p-5">
+        Tout ce qu'il faut savoir sur le tournage de la saga Harry Potter, des studios aux effets spéciaux.
       </p>
 
 
@@ -148,7 +147,7 @@
       <h2 id="accordion-example-heading-1">
         <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
           data-accordion-target="#accordion-example-body-1" aria-expanded="false" aria-controls="accordion-example-body-1">
-          <span class="text-left text-sm">What is Flowbite?</span>
+          <span class="text-left text-sm">Où se déroule le tournage?</span>
           <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
           </svg>
@@ -156,7 +155,7 @@
       </h2>
       <div id="accordion-example-body-1" class="hidden" aria-labelledby="accordion-example-heading-1">
         <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
-          <p>Flowbite is an open-source library of interactive components built on top of Tailwind CSS.</p>
+          <p>Principalement aux studios Leavesden, en Angleterre, où les décors de Poudlard ont été construits. Plusieurs scènes extérieures ont aussi été filmées dans des lieux réels comme le viaduc de Glenfinnan en Écosse ou la cathédrale de Durham.</p>
         </div>
       </div>
     </div>
@@ -165,7 +164,7 @@
       <h2 id="accordion-example-heading-2">
         <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
           data-accordion-target="#accordion-example-body-2" aria-expanded="false" aria-controls="accordion-example-body-2">
-          <span class="text-left text-sm">Is there a Figma file available?</span>
+          <span class="text-left text-sm">Combien de temps a duré le tournage de la saga ?</span>
           <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
           </svg>
@@ -173,7 +172,7 @@
       </h2>
       <div id="accordion-example-body-2" class="hidden" aria-labelledby="accordion-example-heading-2">
         <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
-          <p>Yes, every component has a Figma equivalent in our design system.</p>
+          <p>Environ dix ans au total, entre le début du tournage en 2000 et la sortie du dernier film en 2011, pour un total de huit longs métrages.</p>
         </div>
       </div>
     </div>
@@ -182,7 +181,7 @@
       <h2 id="accordion-example-heading-3">
         <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
           data-accordion-target="#accordion-example-body-3" aria-expanded="false" aria-controls="accordion-example-body-3">
-          <span class="text-left text-sm">All the tools fits in the file font and a businessman?</span>
+          <span class="text-left text-sm">Peut-on visiter les décors originaux ?</span>
           <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
           </svg>
@@ -190,7 +189,7 @@
       </h2>
       <div id="accordion-example-body-3" class="hidden" aria-labelledby="accordion-example-heading-3">
         <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Oui, le Warner Bros. Studio Tour London permet de visiter les décors, costumes et accessoires originaux utilisés pendant le tournage, sur le site même des studios Leavesden.</p>
         </div>
       </div>
     </div>
@@ -202,7 +201,7 @@
       <h2 id="accordion-example-heading-4">
         <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
           data-accordion-target="#accordion-example-body-4" aria-expanded="false" aria-controls="accordion-example-body-4">
-          <span class="text-left text-sm">What are the differences between Flowbite and Tailwind UI?</span>
+          <span class="text-left text-sm">Comment le dernier livre a-t-il été adapté au cinéma ?</span>
           <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
           </svg>
@@ -210,7 +209,7 @@
       </h2>
       <div id="accordion-example-body-4" class="hidden" aria-labelledby="accordion-example-heading-4">
         <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
-          <p>Flowbite is open source under MIT, whereas Tailwind UI is a paid product.</p>
+          <p>Le septième et dernier livre, Les Reliques de la Mort, a été divisé en deux films distincts, sortis en novembre 2010 et juillet 2011, afin de rester fidèle au contenu du roman.</p>
         </div>
       </div>
     </div>
@@ -219,7 +218,7 @@
       <h2 id="accordion-example-heading-5">
         <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
           data-accordion-target="#accordion-example-body-5" aria-expanded="false" aria-controls="accordion-example-body-5">
-          <span class="text-left text-sm">Where can I find the documentation?</span>
+          <span class="text-left text-sm">Quels types d'effets spéciaux ont été utilisés ?</span>
           <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
           </svg>
@@ -227,7 +226,7 @@
       </h2>
       <div id="accordion-example-body-5" class="hidden" aria-labelledby="accordion-example-heading-5">
         <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
-          <p>Check out the official website for the full documentation and examples.</p>
+          <p>Un mélange d'effets pratiques (maquettes, animatroniques, décors physiques) et d'effets numériques, notamment pour les créatures magiques et les scènes de vol au Quidditch.</p>
         </div>
       </div>
     </div>
@@ -236,7 +235,7 @@
       <h2 id="accordion-example-heading-6">
         <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
           data-accordion-target="#accordion-example-body-6" aria-expanded="false" aria-controls="accordion-example-body-6">
-          <span class="text-left text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
+          <span class="text-left text-sm">Où trouver plus d'information sur le tournage ?</span>
           <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
           </svg>
@@ -244,7 +243,7 @@
       </h2>
       <div id="accordion-example-body-6" class="hidden" aria-labelledby="accordion-example-heading-6">
         <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Le site officiel du Warner Bros. Studio Tour London et la plateforme Wizarding World proposent des articles et vidéos détaillant les coulisses de la production.</p>
         </div>
       </div>
     </div>
