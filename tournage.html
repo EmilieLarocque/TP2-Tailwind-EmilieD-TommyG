@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="css/style.css" />
 
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 
 </head>
 
@@ -23,7 +22,7 @@
     <nav class="bg-neutral-primary w-full z-20 top-0 start-0 border-b border-default">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="" class="h-7" alt="Logo" />
+          <img src="" class="bi" alt="Logo" />
           <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Logo</span>
         </a>
         <button data-collapse-toggle="navbar-default" type="button"
@@ -37,7 +36,7 @@
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
             <li>
               <a href="index.html"
                 class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Accueil</a>
@@ -54,10 +53,12 @@
   </header>
 
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+     <!-- section tournage -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
 
       <div class="bg-gray-200 p-4">
-        <img src="" alt="" class="w-full h-auto" />
+        <img src="/media/tournage2.jpg" alt="Tournage" class="object-cover h-600 w-full" />
       </div>
 
       <div>
@@ -101,34 +102,36 @@
 
     <hr class="my-8">
 
+   <!-- section 2 - tournage -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div class="bg-gray-200 p-4">
-        <img src="" alt="" class="w-full h-auto" />
+        <img src="/media/behind1.jpg" alt="Behind the scenes" class="w-full h-auto" />
       </div>
 
       <div class="bg-gray-200 p-4">
-        <img src="" alt="" class="w-full h-auto" />
+        <img src="/media/behind2.jpg" alt="Behind the scenes" class="w-full h-auto" />
       </div>
 
       <div class="bg-gray-200 p-4">
-        <img src="" alt="" class="w-full h-auto" />
+        <img src="/media/behind3.jpg" alt="Behind the scenes" class="w-full h-auto" />
       </div>
 
       <div class="bg-gray-200 p-4">
-        <img src="" alt="" class="w-full h-auto" />
+        <img src="/media/behind4.jpg" alt="Behind the scenes" class="w-full h-auto" />
       </div>
 
       <div class="bg-gray-200 p-4">
-        <img src="" alt="" class="w-full h-auto" />
+        <img src="/media/behind5.jpg" alt="Behind the scenes" class="w-full h-auto" />
       </div>
 
       <div class="bg-gray-200 p-4">
-        <img src="" alt="" class="w-full h-auto" />
+        <img src="/media/behind6.jpg" alt="Behind the scenes" class="w-full h-auto" />
       </div>
     </div>
 
     <hr class="my-8">
 
+    <!-- section 2 - faq -->
     <div>
       <h1 class="text-3xl font-bold text-gray-900 text-center">Section 2</h1>
       <p class="mt-4 text-gray-700 text-center">
@@ -137,113 +140,118 @@
       </p>
 
 
-      <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-neutral-primary text-heading"
-        data-inactive-classes="text-body" class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
+ <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
 
-        <!-- Colonne 1 -->
-        <div>
-          <h2 id="accordion-flush-heading-1">
-            <button type="button"
-              class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-body border-b border-default gap-3"
-              data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
-              aria-controls="accordion-flush-body-1">
-              <span>What is Flowbite?</span>
-              <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="m5 15 7-7 7 7" />
-              </svg>
-            </button>
-          </h2>
-          <div id="accordion-flush-body-1" class="hidden hover:shadow-lg transition duration-300" aria-labelledby="accordion-flush-heading-1">
-            <div class="py-5 border-b border-default text-body">
-              <p class="mb-2">Flowbite is an open-source library of interactive components built on top of Tailwind CSS
-                including buttons, dropdowns, modals, navbars, and more.</p>
-              <p>Check out this guide to learn how to <a href="/docs/getting-started/introduction/"
-                  class="text-fg-brand hover:underline">get started</a> and start developing websites even faster with
-                components on top of Tailwind CSS.</p>
-            </div>
-          </div>
-
-          <h2 id="accordion-flush-heading-2">
-            <button type="button"
-              class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-body border-b border-default gap-3"
-              data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
-              aria-controls="accordion-flush-body-2">
-              <span>Is there a Figma file available?</span>
-              <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="m5 15 7-7 7 7" />
-              </svg>
-            </button>
-          </h2>
-          <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
-            <div class="py-5 border-b border-default text-body">
-              <p class="mb-2">Flowbite is first conceptualized and designed using the Figma software so everything you
-                see in the library has a design equivalent in our Figma file.</p>
-              <p>Check out the <a href="https://flowbite.com/figma/" class="text-fg-brand hover:underline">Figma design
-                  system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
-            </div>
-          </div>
+  <!-- Colonne 1 -->
+  <div id="accordion-col-1">
+    <div class="border border-gray-200 rounded-lg overflow-hidden mb-3">
+      <h2 id="accordion-example-heading-1">
+        <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
+          data-accordion-target="#accordion-example-body-1" aria-expanded="false" aria-controls="accordion-example-body-1">
+          <span class="text-left text-sm">What is Flowbite?</span>
+          <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-example-body-1" class="hidden" aria-labelledby="accordion-example-heading-1">
+        <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
+          <p>Flowbite is an open-source library of interactive components built on top of Tailwind CSS.</p>
         </div>
-
-        <!-- Colonne 2 -->
-        <div>
-          <h2 id="accordion-flush-heading-3">
-            <button type="button"
-              class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-body border-b border-default gap-3"
-              data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
-              aria-controls="accordion-flush-body-3">
-              <span>What are the differences between Flowbite and Tailwind UI?</span>
-              <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="m5 15 7-7 7 7" />
-              </svg>
-            </button>
-          </h2>
-          <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
-            <div class="py-5 text-body border-b border-default">
-              <p class="mb-2">The main difference is that the core components from Flowbite are open source under the
-                MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on
-                smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
-              <p class="mb-2">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as
-                there is no technical reason stopping you from using the best of two worlds.</p>
-              <p class="mb-2">Learn more about these technologies:</p>
-              <ul class="ps-5 list-disc">
-                <li><a href="https://flowbite.com/pro/" class="text-fg-brand hover:underline">Flowbite Pro</a></li>
-                <li><a href="https://tailwindui.com/" rel="nofollow" class="text-fg-brand hover:underline">Tailwind
-                    UI</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <h2 id="accordion-flush-heading-4">
-            <button type="button"
-              class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-body border-b border-default gap-3"
-              data-accordion-target="#accordion-flush-body-4" aria-expanded="false"
-              aria-controls="accordion-flush-body-4">
-              <span>Where can I find the documentation?</span>
-              <svg data-accordion-icon class="w-5 h-5 rotate-180 shrink-0" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="m5 15 7-7 7 7" />
-              </svg>
-            </button>
-          </h2>
-          <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
-            <div class="py-5 text-body border-b border-default">
-              <p class="mb-2">Flowbite is an open-source library of interactive components built on top of Tailwind CSS
-                including buttons, dropdowns, modals, navbars, and more.</p>
-              <p class="mb-2">Check out the official website for the full documentation and examples.</p>
-              <a href="https://flowbite.com/" rel="nofollow" class="text-fg-brand hover:underline">Flowbite Official
-                Website</a>
-            </div>
-          </div>
-        </div>
-
       </div>
+    </div>
+
+    <div class="border border-gray-200 rounded-lg overflow-hidden mb-3">
+      <h2 id="accordion-example-heading-2">
+        <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
+          data-accordion-target="#accordion-example-body-2" aria-expanded="false" aria-controls="accordion-example-body-2">
+          <span class="text-left text-sm">Is there a Figma file available?</span>
+          <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-example-body-2" class="hidden" aria-labelledby="accordion-example-heading-2">
+        <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
+          <p>Yes, every component has a Figma equivalent in our design system.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="border border-gray-200 rounded-lg overflow-hidden">
+      <h2 id="accordion-example-heading-3">
+        <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
+          data-accordion-target="#accordion-example-body-3" aria-expanded="false" aria-controls="accordion-example-body-3">
+          <span class="text-left text-sm">All the tools fits in the file font and a businessman?</span>
+          <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-example-body-3" class="hidden" aria-labelledby="accordion-example-heading-3">
+        <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Colonne 2 -->
+  <div id="accordion-col-2">
+    <div class="border border-gray-200 rounded-lg overflow-hidden mb-3">
+      <h2 id="accordion-example-heading-4">
+        <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
+          data-accordion-target="#accordion-example-body-4" aria-expanded="false" aria-controls="accordion-example-body-4">
+          <span class="text-left text-sm">What are the differences between Flowbite and Tailwind UI?</span>
+          <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-example-body-4" class="hidden" aria-labelledby="accordion-example-heading-4">
+        <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
+          <p>Flowbite is open source under MIT, whereas Tailwind UI is a paid product.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="border border-gray-200 rounded-lg overflow-hidden mb-3">
+      <h2 id="accordion-example-heading-5">
+        <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
+          data-accordion-target="#accordion-example-body-5" aria-expanded="false" aria-controls="accordion-example-body-5">
+          <span class="text-left text-sm">Where can I find the documentation?</span>
+          <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-example-body-5" class="hidden" aria-labelledby="accordion-example-heading-5">
+        <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
+          <p>Check out the official website for the full documentation and examples.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="border border-gray-200 rounded-lg overflow-hidden">
+      <h2 id="accordion-example-heading-6">
+        <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
+          data-accordion-target="#accordion-example-body-6" aria-expanded="false" aria-controls="accordion-example-body-6">
+          <span class="text-left text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
+          <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-example-body-6" class="hidden" aria-labelledby="accordion-example-heading-6">
+        <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 
 
     </div>
@@ -253,13 +261,13 @@
     <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
 
       <div class="flex items-center gap-6">
-        <a href="tel:+000000000" class="flex items-center gap-2 hover:text-gray-600">
+        <a href="tel:+0000000000" class="flex items-center gap-2 hover:text-gray-600">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path
               d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
           </svg>
-          <span class="underline">+00 000 0000</span>
+          <span class="underline">+000 000 0000</span>
         </a>
 
         <a href="mailto:votre@nom.com" class="flex items-center gap-2 hover:text-gray-600">
@@ -322,6 +330,8 @@
     </p>
   </footer>
 
+  <script src="https://unpkg.com/flowbite@2.3.0/dist/flowbite.min.js"></script>
+  <script src="/js/accordeon.js"></script>
 </body>
 
 </html>
