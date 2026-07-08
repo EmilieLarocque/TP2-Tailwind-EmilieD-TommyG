@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gabarit de site web</title>
-  <meta name="description" content="Description site">
+  <title>Films de Harry Potter</title>
+  <meta name="description" content="Présentation des films de Harry Potter">
+  <link rel="icon" type="image/x-icon" href="img/logoHP.png">
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
   <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  <script src="js/animationSubmit.js" defer></script>
 </head>
 
 <body>
@@ -154,14 +156,22 @@
     <section>
       <h2 class="text-4xl font-bold flex flex-col items-center">Images et extraits</h2>
       <p class="flex flex-col items-center">Voici des images et extraits des 8 films de Harry Potter</p>
-      <form class="max-w-md mx-auto flex items-center gap-2 mt-6" action="">
+      <form id="emailForm" class="max-w-md mx-auto flex items-center gap-2 mt-6" action="">
         <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Courriel</label>
         <input
           class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           type="email" name="email" id="email">
-        <button class="border rounded-3xl border-ra border-gray-400 p-1 hover:text-white hover:bg-blue-500"
-          type="submit">S'inscrire</button>
+        <button id="submitBtn"
+          class="bg-blue-600 text-white px-6 py-2 rounded flex items-center justify-center gap-2 hover:bg-blue-700 transition">
+          <span id="btnText">Soumettre</span>
+          <svg id="spinner" class="hidden animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path>
+          </svg>
+        </button>
       </form>
+      <p id="messageErreur" class="max-w-md mx-auto text-red-600 text-sm mt-2 text-center"></p>
 
       <!-- PHOTOS ET VIDEO -->
 
@@ -202,8 +212,10 @@
           <img src="img/danielRadcliffe.jpeg" class="w-full h-60 object-cover object-center rounded-lg" alt="">
 
           <div class="p-4">
-            <h4 class="text-lg font-bold">Harry Potter</h4>
-            <p class="text-sm mt-2">Description</p>
+            <h4 class="text-lg font-bold">Daniel Radcliffe</h4>
+            <h5 class="text-md mt-1">Harry Potter</h5>
+            <p class="text-sm mt-2">Le jeune sorcier au destin exceptionnel. Courageux et loyal, il lutte contre Lord
+              Voldemort pour protéger le monde des sorciers.</p>
 
             <div class="flex gap-3 mt-4 text-xl">
               <a href="#" target="_blank">
@@ -224,8 +236,10 @@
         <div class="col-span-12 sm:col-span-6 lg:col-span-3">
           <img src="img/emmaWatson.jpeg" class="w-full h-60 object-cover object-center rounded-lg" alt="">
           <div class="p-4">
-            <h4 class="text-lg font-bold">Hermione Granger</h4>
-            <p class="text-sm mt-2">Description</p>
+            <h4 class="text-lg font-bold">Emma Watson</h4>
+            <h5 class="text-md mt-1">Hermione Granger</h5>
+            <p class="text-sm mt-2">Élève brillante et passionnée par la magie. Son intelligence et son courage font
+              d'elle une alliée indispensable de Harry.</p>
 
             <div class="flex gap-3 mt-4 text-xl">
               <a href="#" target="_blank">
@@ -246,8 +260,10 @@
         <div class="col-span-12 sm:col-span-6 lg:col-span-3">
           <img src="img/rupertGrint.jpeg" class="w-full h-60 object-cover object-center rounded-lg" alt="">
           <div class="p-4">
-            <h4 class="text-lg font-bold">Ronald Weasley</h4>
-            <p class="text-sm mt-2">Description</p>
+            <h4 class="text-lg font-bold">Rupert Grint</h4>
+            <h5 class="text-md mt-1">Ronald Weasley</h5>
+            <p class="text-sm mt-2">Meilleur ami de Harry, reconnu pour sa loyauté et son sens de l'humour. Il affronte
+              les dangers aux côtés de ses amis.</p>
 
             <div class="flex gap-3 mt-4 text-xl">
               <a href="#" target="_blank">
@@ -268,8 +284,10 @@
         <div class="col-span-12 sm:col-span-6 lg:col-span-3">
           <img src="img/tomFelton.jpeg" class="w-full h-60 object-cover object-center rounded-lg" alt="">
           <div class="p-4">
-            <h4 class="text-lg font-bold">Draco Malfoy</h4>
-            <p class="text-sm mt-2">Description</p>
+            <h4 class="text-lg font-bold">Tom Felton</h4>
+            <h5 class="text-md mt-1">Draco Malfoy</h5>
+            <p class="text-sm mt-2">Élève de Serpentard et rival de Harry. Issu d'une famille influente, il est souvent
+              partagé entre ses choix et les attentes de son entourage.</p>
 
             <div class="flex gap-3 mt-4 text-xl">
               <a href="#" target="_blank">
@@ -290,8 +308,10 @@
         <div class="col-span-12 sm:col-span-6 lg:col-span-3">
           <img src="img/michaelGambon.jpeg" class="w-full h-60 object-cover object-center rounded-lg" alt="">
           <div class="p-4">
-            <h4 class="text-lg font-bold">Albus Dumbledore</h4>
-            <p class="text-sm mt-2">Description</p>
+            <h4 class="text-lg font-bold">Michael Gambon</h4>
+            <h5 class="text-md mt-1">Albus Dumbledore</h5>
+            <p class="text-sm mt-2">Directeur de Poudlard et l'un des plus grands sorciers de son époque. Il guide Harry
+              avec sagesse tout au long de son parcours.</p>
 
             <div class="flex gap-3 mt-4 text-xl">
               <a href="#" target="_blank">
@@ -312,8 +332,10 @@
         <div class="col-span-12 sm:col-span-6 lg:col-span-3">
           <img src="img/robbieColtrane.jpeg" class="w-full h-60 object-cover object-center rounded-lg" alt="">
           <div class="p-4">
-            <h4 class="text-lg font-bold">Rubeus Hagrid</h4>
-            <p class="text-sm mt-2">Description</p>
+            <h4 class="text-lg font-bold">Robbie Coltrane</h4>
+            <h5 class="text-md mt-1">Rubeus Hagrid</h5>
+            <p class="text-sm mt-2">Garde-chasse de Poudlard au grand cœur. Malgré son apparence imposante, il est
+              généreux et profondément attaché à ses amis.</p>
 
             <div class="flex gap-3 mt-4 text-xl">
               <a href="#" target="_blank">
@@ -334,8 +356,10 @@
         <div class="col-span-12 sm:col-span-6 lg:col-span-3">
           <img src="img/alanRickman.jpeg" class="w-full h-60 object-cover object-center rounded-lg" alt="">
           <div class="p-4">
-            <h4 class="text-lg font-bold">Severus Rogue</h4>
-            <p class="text-sm mt-2">Description</p>
+            <h4 class="text-lg font-bold">Alan Rickman</h4>
+            <h5 class="text-md mt-1">Severus Rogue</h5>
+            <p class="text-sm mt-2">Professeur de potions, mystérieux et exigeant. Derrière son attitude froide se cache
+              un personnage complexe et courageux.</p>
 
             <div class="flex gap-3 mt-4 text-xl">
               <a href="#" target="_blank">
@@ -356,8 +380,10 @@
         <div class="col-span-12 sm:col-span-6 lg:col-span-3">
           <img src="img/ralphFiennes.jpeg" class="w-full h-60 object-cover object-center rounded-lg" alt="">
           <div class="p-4">
-            <h4 class="text-lg font-bold">Lord Voldemort</h4>
-            <p class="text-sm mt-2">Description</p>
+            <h4 class="text-lg font-bold">Ralph Fiennes</h4>
+            <h5 class="text-md mt-1">Lord Voldemort</h5>
+            <p class="text-sm mt-2">Le plus puissant mage noir de son époque. Déterminé à obtenir l'immortalité, il
+              cherche à dominer le monde des sorciers.</p>
 
             <div class="flex gap-3 mt-4 text-xl">
               <a href="#" target="_blank">
@@ -381,7 +407,41 @@
 
     <!--CONTENU SUPPLÉMENTAIRE-->
 
-    <section>
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid grid-cols-12 lg:col-span-6 gap-8 items-center mb-12">
+        <img src="img/poudlard.jpg.webp" alt="photo de poudlard" class="col-span-12 lg:col-span-6 w-full rounded-lg">
+
+        <div class="col-span-12 lg:col-span-6">
+          <p>
+            Poudlard est l’école de sorcellerie où Harry Potter apprend la magie. Les élèves y sont répartis dans quatre
+            maisons : Gryffondor, Serdaigle, Poufsouffle et Serpentard.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-12 lg:col-span-6 gap-8 items-center mb-12">
+        <div class="col-span-12 lg:col-span-6">
+          <p>Harry, Hermione et Ron forment un trio inséparable. Ensemble, ils affrontent de nombreux dangers tout en
+            découvrant les mystères qui entourent Lord Voldemort.</p>
+        </div>
+
+        <img src="img/principaux.jpeg" class="col-span-12 lg:col-span-6 w-full rounded-lg" alt="Personnages principaux">
+      </div>
+
+
+      <div class="grid grid-cols-12 lg:col-span-6 gap-8 items-center mb-12">
+        <img src="img/affiche.webp" alt="Affiche des livres et des films"
+          class="col-span-12 lg:col-span-6 w-full rounded-lg">
+
+        <div class="col-span-12 lg:col-span-6">
+          <p>
+            La saga Harry Potter compte huit films sortis entre 2001 et 2011. Elle est devenue l’une des franchises
+            cinématographiques les plus populaires au monde et continue d’inspirer des millions de fans
+          </p>
+        </div>
+      </div>
+
+
 
 
     </section>
@@ -389,7 +449,49 @@
 
   </main>
 
-  <footer></footer>
+  <footer class="mt-16 border-t border-black">
+    <div class="max-w-7xl mx-auto px-6 py-10">
+
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+
+        <!-- Coordonnées -->
+        <div class="flex items-center gap-6">
+
+          <div class="flex items-center gap-2">
+            <img src="img/phone.png" class="w-5 h-5" alt="Téléphone">
+            <span>+1 (819) 000-0000</span>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <img src="img/email.png" class="w-5 h-5" alt="Courriel">
+            <span>harrypotter@poudlard.com</span>
+          </div>
+
+        </div>
+
+        <!-- Nom et réseaux sociaux -->
+        <div class="flex items-center gap-6">
+
+          <span>Tommy Guertin-Maheu & Émilie Deraps-Larocque</span>
+
+          <div class="flex gap-4">
+            <a href="#"><img src="img/facebook.png" class="w-5 h-5" alt="Facebook"></a>
+            <a href="#"><img src="img/twitter.png" class="w-5 h-5" alt="Twitter"></a>
+            <a href="#"><img src="img/instagram.png" class="w-5 h-5" alt="Instagram"></a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr class="border-black my-8">
+
+      <p class="text-gray-600">
+        Cégep de Trois-Rivières
+      </p>
+
+    </div>
+  </footer>
 
 
 
