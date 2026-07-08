@@ -10,13 +10,6 @@
 
 **Date de remise :** Vendredi 10 juillet 2026
 
-## Équipe
- 
-| Prénom Nom |
-|---|
-| *Émilie Deraps-Larocuque* | 
-| *Tommy Guertin-Maheu* | 
-
 ## Composants Tailwind / Flowbite utilisés
  
 | Composant | Page | Description |
