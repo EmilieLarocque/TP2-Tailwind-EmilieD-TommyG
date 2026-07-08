@@ -3,8 +3,11 @@
 # TP2 – Grille, composants Tailwind et animations
  
 **Projet :** TP2_D-LAROCQUE-EMILIE-GUERTIN-M-TOMMY
+
 **Thème :** Harry Potter
+
 **Cours :** Technique d'intégration des interfaces Web 2
+
 **Date de remise :** Vendredi 10 juillet 2026
 
 ## Équipe
