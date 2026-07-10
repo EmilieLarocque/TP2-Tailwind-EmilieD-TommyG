@@ -25,6 +25,14 @@
 | Compteur animé | Statistiques du tournage (8, 7,7G$, 24, 12) | déclenche le comptage progressif de 0 jusqu'à la valeur finale |
 | *(2e animation)* | Accueil | *(à compléter)* |
 
+## Animations CSS
+ 
+| Nom | Élément | Description |
+|---|---|---|
+| fadeInUp | Images (hero + galerie, page Tournage) | Apparition en fondu avec léger déplacement vers le haut au chargement |
+| pulseButton | Bouton "En savoir plus" (page Tournage) | Pulsation + halo lumineux au survol |
+| *(2e animation)* | Accueil | *(à compléter)* |
+
 ## Répartition des tâches
  
 | Prénom Nom | Tâches |
