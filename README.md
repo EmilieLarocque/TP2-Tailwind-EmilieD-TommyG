@@ -38,4 +38,4 @@
 | Prénom Nom | Tâches |
 |---|---|
 | *Émilie* | Page Tournage  |
-| *(à compléter)* | Page Accueil |
+| *Tommy* | Page Accueil |
