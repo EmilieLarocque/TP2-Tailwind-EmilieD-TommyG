@@ -37,5 +37,5 @@
  
 | Prénom Nom | Tâches |
 |---|---|
-| *Émilie* | Page Tournage (grille 12 colonnes, accordéon FAQ, animations CSS/JS, BEM) |
-| *(à compléter)* | Page Accueil (carrousel, 2e animation JS/CSS, navbar) |
+| *Émilie* | Page Tournage  |
+| *(à compléter)* | Page Accueil |
