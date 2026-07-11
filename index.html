@@ -1,19 +1,514 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Gabarit de site web</title>
-    <meta name="description" content="Description site">
-    
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Films de Harry Potter</title>
+  <meta name="description" content="Présentation des films de Harry Potter">
+  <link rel="icon" type="image/x-icon" href="img/logoHP.png">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  <script src="js/animationSubmit.js" defer></script>
+</head>
 
-  <body>
+<body>
+  <header class="bg-gray-800 text-white">
+    <!-- NAV BAR -->
+    <nav class="bg-neutral-primary w-full z-20 top-0 start-0 border-default">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="img/logoHP.png" class="h-7" alt="Logo de Harry Potter" />
+          <span class="self-center text-xl text-heading font-semibold whitespace-nowrap ">Harry Potter</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Ouvrir le menu principal</span>
+          <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+            <li>
+              <a href="index.html"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Accueil</a>
+            </li>
+            <li>
+              <a href="tournage.html"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Tournage</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  </body>
+
+  <!-- PRESENTATION -->
+  <main class="m-2">
+    <section class="max-w-7xl mx-auto px-6 py-20">
+      <div class="grid grid-cols-12 gap-8 items-center">
+        <div class="col-span-12 lg:col-span-6 flex flex-col gap-6 max-w-md">
+          <h1 class="text-5xl font-bold">Présentation de l'oeuvre</h1>
+          <p>Harry Potter est une série de films fantastiques adaptée des romans de J. K. Rowling. Elle raconte
+            l’histoire
+            de
+            Harry Potter, un jeune sorcier qui découvre, à l’âge de onze ans, qu’il est admis à l’école de sorcellerie
+            de
+            Poudlard. Au fil de ses aventures, accompagné de ses amis Hermione Granger et Ron Weasley, il apprend la
+            magie,
+            fait face à de nombreux défis et lutte contre le puissant mage noir Lord Voldemort.</p>
+          <div class="flex flex-row gap-4">
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hover:shadow-lg transition duration-300">Sélectionner
+              la
+              quantité</button>
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hover:shadow-lg transition duration-300">Acheter
+              maintenant</button>
+          </div>
+        </div>
+
+
+
+        <!-- CARROUSEL -->
+        <div id="default-carousel" class="relative w-full max-w-96 col-span-12 lg:col-span-6" data-carousel="slide">
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 overflow-hidden rounded-base md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="img/HP1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="Photo de Harry Potter 1">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="img/HP2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="Photo de Harry Potter 2">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="img/HP3.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="Photo de Harry Potter 3">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="img/HP4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="Photo de Harry Potter 4">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="img/images.jpeg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="Photo de Harry Potter 5">
+            </div>
+          </div>
+          <!-- Slider indicators -->
+          <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 1"
+              data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 2"
+              data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 3"
+              data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 4"
+              data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 5"
+              data-carousel-slide-to="4"></button>
+          </div>
+          <!-- Slider controls -->
+          <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m15 19-7-7 7-7" />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m9 5 7 7-7 7" />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- IMAGES ET EXTRAITS -->
+    <section>
+      <h2 class="text-4xl font-bold flex flex-col items-center">Images et extraits</h2>
+      <p class="flex flex-col items-center">Voici des images et extraits des 8 films de Harry Potter</p>
+      <form id="emailForm" class="max-w-md mx-auto flex items-center gap-2 mt-6" action="">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Courriel</label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          type="email" name="email" id="email">
+        <button id="submitBtn"
+          class="bg-blue-600 text-white px-6 py-2 rounded flex items-center justify-center gap-2 hover:bg-blue-700 transition">
+          <span id="btnText">Soumettre</span>
+          <svg id="spinner" class="hidden animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" aria-hidden="true">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path>
+          </svg>
+        </button>
+      </form>
+      <p id="messageErreur" class="max-w-md mx-auto text-red-600 text-sm mt-2 text-center" aria-live="polite"></p>
+
+      <!-- PHOTOS ET VIDEO -->
+
+      <div class="max-w-5xl mx-auto p-4 space-y-6">
+
+        <div class="grid grid-cols-12 gap-4">
+
+          <img src="img/image1.jpg" class="col-span-12 md:col-span-4 w-full h-60 object-cover rounded-lg"
+            alt="Photo de Harry, Ron et Hermione">
+          <img src="img/image2.jpg" class="col-span-12 md:col-span-4 w-full h-60 object-cover rounded-lg"
+            alt="Photo de monstre bleu">
+          <img src="img/image3.jpg" class="col-span-12 md:col-span-4 w-full h-60 object-cover rounded-lg"
+            alt="Photo de Cedric Diggory">
+
+
+
+        </div>
+
+        <div class="grid grid-cols-12">
+          <div class="col-span-12">
+            <video class="w-full rounded-lg" controls>
+              <source src="video/theme.mp4" type="video/mp4">
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <!-- ACTEURS -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+      <h3 class="text-4xl font-bold">Présentation des acteurs</h3>
+
+      <div class="grid grid-cols-12 gap-6">
+
+        <!--DANIEL RADCLIFFE-->
+        <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+          <img src="img/danielRadcliffe.jpeg" class="w-full h-60 object-cover object-center rounded-lg"
+            alt="Portrait de Daniel Radcliffe">
+
+          <div class="p-4">
+            <h4 class="text-lg font-bold">Daniel Radcliffe</h4>
+            <h5 class="text-md mt-1">Harry Potter</h5>
+            <p class="text-sm mt-2">Le jeune sorcier au destin exceptionnel. Courageux et loyal, il lutte contre Lord
+              Voldemort pour protéger le monde des sorciers.</p>
+
+            <div class="flex gap-3 mt-4 text-xl">
+              <a href="#" target="_blank">
+                <img src="img/facebook.png" class="w-5 h-5 object-contain" alt="logo Facebook">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/instagram.png" class="w-5 h-5 object-contain" alt="logo Instagram">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/twitter.png" class="w-5 h-5 object-contain" alt="logo Twitter">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <!--EMMA WATSON-->
+        <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+          <img src="img/emmaWatson.jpeg" class="w-full h-60 object-cover object-center rounded-lg"
+            alt="Portrait d'Emma Watson">
+          <div class="p-4">
+            <h4 class="text-lg font-bold">Emma Watson</h4>
+            <h5 class="text-md mt-1">Hermione Granger</h5>
+            <p class="text-sm mt-2">Élève brillante et passionnée par la magie. Son intelligence et son courage font
+              d'elle une alliée indispensable de Harry.</p>
+
+            <div class="flex gap-3 mt-4 text-xl">
+              <a href="#" target="_blank">
+                <img src="img/facebook.png" class="w-5 h-5 object-contain" alt="logo Facebook">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/instagram.png" class="w-5 h-5 object-contain" alt="logo Instagram">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/twitter.png" class="w-5 h-5 object-contain" alt="logo Twitter">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <!--RUPERT GRINT-->
+        <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+          <img src="img/rupertGrint.jpeg" class="w-full h-60 object-cover object-center rounded-lg"
+            alt="Portrait de Rupert Grint">
+          <div class="p-4">
+            <h4 class="text-lg font-bold">Rupert Grint</h4>
+            <h5 class="text-md mt-1">Ronald Weasley</h5>
+            <p class="text-sm mt-2">Meilleur ami de Harry, reconnu pour sa loyauté et son sens de l'humour. Il affronte
+              les dangers aux côtés de ses amis.</p>
+
+            <div class="flex gap-3 mt-4 text-xl">
+              <a href="#" target="_blank">
+                <img src="img/facebook.png" class="w-5 h-5 object-contain" alt="logo Facebook">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/instagram.png" class="w-5 h-5 object-contain" alt="logo Instagram">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/twitter.png" class="w-5 h-5 object-contain" alt="logo Twitter">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <!--TOM FELTON-->
+        <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+          <img src="img/tomFelton.jpeg" class="w-full h-60 object-cover object-center rounded-lg"
+            alt="Portrait de Tom Felton">
+          <div class="p-4">
+            <h4 class="text-lg font-bold">Tom Felton</h4>
+            <h5 class="text-md mt-1">Draco Malfoy</h5>
+            <p class="text-sm mt-2">Élève de Serpentard et rival de Harry. Issu d'une famille influente, il est souvent
+              partagé entre ses choix et les attentes de son entourage.</p>
+
+            <div class="flex gap-3 mt-4 text-xl">
+              <a href="#" target="_blank">
+                <img src="img/facebook.png" class="w-5 h-5 object-contain" alt="logo Facebook">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/instagram.png" class="w-5 h-5 object-contain" alt="logo Instagram">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/twitter.png" class="w-5 h-5 object-contain" alt="logo Twitter">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <!--MICHAEL GAMBON-->
+        <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+          <img src="img/michaelGambon.jpeg" class="w-full h-60 object-cover object-center rounded-lg"
+            alt="Portrait de Michael Gambon">
+          <div class="p-4">
+            <h4 class="text-lg font-bold">Michael Gambon</h4>
+            <h5 class="text-md mt-1">Albus Dumbledore</h5>
+            <p class="text-sm mt-2">Directeur de Poudlard et l'un des plus grands sorciers de son époque. Il guide Harry
+              avec sagesse tout au long de son parcours.</p>
+
+            <div class="flex gap-3 mt-4 text-xl">
+              <a href="#" target="_blank">
+                <img src="img/facebook.png" class="w-5 h-5 object-contain" alt="logo Facebook">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/instagram.png" class="w-5 h-5 object-contain" alt="logo Instagram">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/twitter.png" class="w-5 h-5 object-contain" alt="logo Twitter">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <!--ROBBIE COLTRANE-->
+        <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+          <img src="img/robbieColtrane.jpeg" class="w-full h-60 object-cover object-center rounded-lg"
+            alt="Portrait de Robbie Coltrane">
+          <div class="p-4">
+            <h4 class="text-lg font-bold">Robbie Coltrane</h4>
+            <h5 class="text-md mt-1">Rubeus Hagrid</h5>
+            <p class="text-sm mt-2">Garde-chasse de Poudlard au grand cœur. Malgré son apparence imposante, il est
+              généreux et profondément attaché à ses amis.</p>
+
+            <div class="flex gap-3 mt-4 text-xl">
+              <a href="#" target="_blank">
+                <img src="img/facebook.png" class="w-5 h-5 object-contain" alt="logo Facebook">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/instagram.png" class="w-5 h-5 object-contain" alt="logo Instagram">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/twitter.png" class="w-5 h-5 object-contain" alt="logo Twitter">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <!--ALAN RICKMAN-->
+        <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+          <img src="img/alanRickman.jpeg" class="w-full h-60 object-cover object-center rounded-lg"
+            alt="Portrait de Alan Rickman">
+          <div class="p-4">
+            <h4 class="text-lg font-bold">Alan Rickman</h4>
+            <h5 class="text-md mt-1">Severus Rogue</h5>
+            <p class="text-sm mt-2">Professeur de potions, mystérieux et exigeant. Derrière son attitude froide se cache
+              un personnage complexe et courageux.</p>
+
+            <div class="flex gap-3 mt-4 text-xl">
+              <a href="#" target="_blank">
+                <img src="img/facebook.png" class="w-5 h-5 object-contain" alt="logo Facebook">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/instagram.png" class="w-5 h-5 object-contain" alt="logo Instagram">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/twitter.png" class="w-5 h-5 object-contain" alt="logo Twitter">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <!--RALPH FIENNES-->
+        <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+          <img src="img/ralphFiennes.jpeg" class="w-full h-60 object-cover object-center rounded-lg"
+            alt="Portrait de Ralph Fiennes">
+          <div class="p-4">
+            <h4 class="text-lg font-bold">Ralph Fiennes</h4>
+            <h5 class="text-md mt-1">Lord Voldemort</h5>
+            <p class="text-sm mt-2">Le plus puissant mage noir de son époque. Déterminé à obtenir l'immortalité, il
+              cherche à dominer le monde des sorciers.</p>
+
+            <div class="flex gap-3 mt-4 text-xl">
+              <a href="#" target="_blank">
+                <img src="img/facebook.png" class="w-5 h-5 object-contain" alt="logo Facebook">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/instagram.png" class="w-5 h-5 object-contain" alt="logo Instagram">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/twitter.png" class="w-5 h-5 object-contain" alt="logo Twitter">
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+
+    <!--CONTENU SUPPLÉMENTAIRE-->
+
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid grid-cols-12 lg:col-span-6 gap-8 items-center mb-12">
+        <img src="img/poudlard.jpg.webp" alt="photo de poudlard" class="col-span-12 lg:col-span-6 w-full rounded-lg">
+
+        <div class="col-span-12 lg:col-span-6">
+          <p>
+            Poudlard est l’école de sorcellerie où Harry Potter apprend la magie. Les élèves y sont répartis dans quatre
+            maisons : Gryffondor, Serdaigle, Poufsouffle et Serpentard.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-12 lg:col-span-6 gap-8 items-center mb-12">
+        <div class="col-span-12 lg:col-span-6">
+          <p>Harry, Hermione et Ron forment un trio inséparable. Ensemble, ils affrontent de nombreux dangers tout en
+            découvrant les mystères qui entourent Lord Voldemort.</p>
+        </div>
+
+        <img src="img/principaux.jpeg" class="col-span-12 lg:col-span-6 w-full rounded-lg" alt="Personnages principaux">
+      </div>
+
+
+      <div class="grid grid-cols-12 lg:col-span-6 gap-8 items-center mb-12">
+        <img src="img/affiche.webp" alt="Affiche des livres et des films"
+          class="col-span-12 lg:col-span-6 w-full rounded-lg">
+
+        <div class="col-span-12 lg:col-span-6">
+          <p>
+            La saga Harry Potter compte huit films sortis entre 2001 et 2011. Elle est devenue l’une des franchises
+            cinématographiques les plus populaires au monde et continue d’inspirer des millions de fans
+          </p>
+        </div>
+      </div>
+
+
+
+
+    </section>
+
+
+  </main>
+
+  <footer class="bg-gray-800 text-gray-300 mt-16 border-t border-black">
+    <div class="max-w-7xl mx-auto px-6 py-10">
+
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+
+        <!-- Coordonnées -->
+        <div class="flex items-center gap-6">
+
+          <div class="flex items-center gap-2">
+            <img src="img/phone.png" class="w-5 h-5" alt="Téléphone">
+            <span>+1 (819) 000-0000</span>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <img src="img/email.png" class="w-5 h-5" alt="Courriel">
+            <span>harrypotter@poudlard.com</span>
+          </div>
+
+        </div>
+
+        <!-- Nom et réseaux sociaux -->
+        <div class="flex items-center gap-6">
+
+          <span>Tommy Guertin-Maheu & Émilie Deraps-Larocque</span>
+
+          <div class="flex gap-4">
+            <a href="#"><img src="img/facebook.png" class="w-5 h-5" alt="Facebook"></a>
+            <a href="#"><img src="img/twitter.png" class="w-5 h-5" alt="Twitter"></a>
+            <a href="#"><img src="img/instagram.png" class="w-5 h-5" alt="Instagram"></a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr class="border-black my-8">
+
+      <p class="text-sm text-gray-500 text-center text-tramsform uppercase">
+        cegep de trois-rivieres 2026 - <a href="https://www.cegeptr.qc.ca/"
+          class="text-gray-400 hover:text-gray-600">cegeptr.qc.ca</a>
+      </p>
+
+    </div>
+  </footer>
+
+
+
+</body>
+
 </html>
