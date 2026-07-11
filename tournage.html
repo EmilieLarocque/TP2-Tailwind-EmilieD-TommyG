@@ -1,19 +1,336 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Gabarit de site web</title>
-    <meta name="description" content="Description site">
-    
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  </head>
+  <title>Gabarit de site web</title>
+  <meta name="description" content="Description site">
 
-  <body>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-  </body>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <header class="header bg-gray-800 text-white">
+    <!-- NAV BAR -->
+    <nav class="bg-neutral-primary w-full z-20 top-0 start-0 border-b border-default">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="" class="bi" alt="Logo" />
+          <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Logo</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+            <li>
+              <a href="index.html"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Accueil</a>
+            </li>
+            <li>
+              <a href="tournage.html"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Tournage</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+     <!-- section tournage -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+
+      <div class="bg-gray-200 p-4 tournage-bloc__media">
+        <img src="/media/tournage2.jpg" alt="Tournage" class="object-cover h-600 w-full tournage-bloc__image" />
+      </div>
+
+      <div>
+        <h1 class="text-3xl font-bold text-gray-900">Le tournage d'Harry Potter</h1>
+
+        <p class="mt-4 text-gray-700">
+          Entre 2001 et 2011, huit films ont donné vie à l'univers de J.K. Rowling, principalement tournés aux studios de Leavesden, en Angleterre. Des décors grandeur nature du Poudlard Express aux effets visuels de Quidditch, la saga reste l'une des productions les plus marquantes du cinéma fantastique.
+        </p>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div class="mt-4">
+            <div class="text-base font-bold text-green-500">8</div>
+            <span class="text-gray-700 text-sm leading-none">films tournés (2001-2011)</span>
+          </div>
+
+          <div class="mt-4">
+            <div class="text-base font-bold text-green-500">7,7G$</div>
+            <span class="text-gray-700 text-sm leading-none">de recettes mondiales au box-office</span>
+          </div>
+
+          <div class="mt-4">
+            <div class="text-base font-bold text-green-500">24</div>
+            <span class="text-gray-700 text-sm leading-none">nominations aux BAFTA</span>
+          </div>
+
+          <div class="mt-4">
+            <div class="text-base font-bold text-green-500">12</div>
+            <span class="text-gray-700 text-sm">nominations aux Oscars</span>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hover:shadow-lg transition duration-300">
+            En savoir plus
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="my-8">
+
+   <!-- section 2 - tournage -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 tournage-galerie">
+      <div class="bg-gray-200 p-4 tournage-item">
+        <img src="/media/behind1.jpg" alt="Behind the scenes" class="w-full h-auto tournage-item__image" />
+      </div>
+
+      <div class="bg-gray-200 p-4 tournage-item">
+        <img src="/media/behind2.jpg" alt="Behind the scenes" class="w-full h-auto tournage-item__image" />
+      </div>
+
+      <div class="bg-gray-200 p-4 tournage-item">
+        <img src="/media/behind3.jpg" alt="Behind the scenes" class="w-full h-auto tournage-item__image" />
+      </div>
+
+      <div class="bg-gray-200 p-4 tournage-item">
+        <img src="/media/behind4.jpg" alt="Behind the scenes" class="w-full h-auto tournage-item__image" />
+      </div>
+
+      <div class="bg-gray-200 p-4 tournage-item">
+        <img src="/media/behind5.jpg" alt="Behind the scenes" class="w-full h-auto tournage-item__image" />
+      </div>
+
+      <div class="bg-gray-200 p-4 tournage-item">
+        <img src="/media/behind6.jpg" alt="Behind the scenes" class="w-full h-auto tournage-item__image" />
+      </div>
+    </div>
+
+    <hr class="my-8">
+
+    <!-- section 2 - faq -->
+    <div>
+      <h1 class="text-3xl font-bold text-gray-900 text-center">Foire aux questions</h1>
+      <p class="mt-4 text-gray-700 text-center p-5">
+        Tout ce qu'il faut savoir sur le tournage de la saga Harry Potter, des studios aux effets spéciaux.
+      </p>
+
+
+ <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+
+  <!-- Colonne 1 -->
+  <div id="accordion-col-1">
+    <div class="border border-gray-200 rounded-lg overflow-hidden mb-3">
+      <h2 id="accordion-example-heading-1">
+        <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
+          data-accordion-target="#accordion-example-body-1" aria-expanded="false" aria-controls="accordion-example-body-1">
+          <span class="text-left text-sm">Où se déroule le tournage?</span>
+          <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-example-body-1" class="hidden" aria-labelledby="accordion-example-heading-1">
+        <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
+          <p>Principalement aux studios Leavesden, en Angleterre, où les décors de Poudlard ont été construits. Plusieurs scènes extérieures ont aussi été filmées dans des lieux réels comme le viaduc de Glenfinnan en Écosse ou la cathédrale de Durham.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="border border-gray-200 rounded-lg overflow-hidden mb-3">
+      <h2 id="accordion-example-heading-2">
+        <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
+          data-accordion-target="#accordion-example-body-2" aria-expanded="false" aria-controls="accordion-example-body-2">
+          <span class="text-left text-sm">Combien de temps a duré le tournage de la saga ?</span>
+          <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-example-body-2" class="hidden" aria-labelledby="accordion-example-heading-2">
+        <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
+          <p>Environ dix ans au total, entre le début du tournage en 2000 et la sortie du dernier film en 2011, pour un total de huit longs métrages.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="border border-gray-200 rounded-lg overflow-hidden">
+      <h2 id="accordion-example-heading-3">
+        <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
+          data-accordion-target="#accordion-example-body-3" aria-expanded="false" aria-controls="accordion-example-body-3">
+          <span class="text-left text-sm">Peut-on visiter les décors originaux ?</span>
+          <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-example-body-3" class="hidden" aria-labelledby="accordion-example-heading-3">
+        <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
+          <p>Oui, le Warner Bros. Studio Tour London permet de visiter les décors, costumes et accessoires originaux utilisés pendant le tournage, sur le site même des studios Leavesden.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Colonne 2 -->
+  <div id="accordion-col-2">
+    <div class="border border-gray-200 rounded-lg overflow-hidden mb-3">
+      <h2 id="accordion-example-heading-4">
+        <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
+          data-accordion-target="#accordion-example-body-4" aria-expanded="false" aria-controls="accordion-example-body-4">
+          <span class="text-left text-sm">Comment le dernier livre a-t-il été adapté au cinéma ?</span>
+          <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-example-body-4" class="hidden" aria-labelledby="accordion-example-heading-4">
+        <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
+          <p>Le septième et dernier livre, Les Reliques de la Mort, a été divisé en deux films distincts, sortis en novembre 2010 et juillet 2011, afin de rester fidèle au contenu du roman.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="border border-gray-200 rounded-lg overflow-hidden mb-3">
+      <h2 id="accordion-example-heading-5">
+        <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
+          data-accordion-target="#accordion-example-body-5" aria-expanded="false" aria-controls="accordion-example-body-5">
+          <span class="text-left text-sm">Quels types d'effets spéciaux ont été utilisés ?</span>
+          <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-example-body-5" class="hidden" aria-labelledby="accordion-example-heading-5">
+        <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
+          <p>Un mélange d'effets pratiques (maquettes, animatroniques, décors physiques) et d'effets numériques, notamment pour les créatures magiques et les scènes de vol au Quidditch.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="border border-gray-200 rounded-lg overflow-hidden">
+      <h2 id="accordion-example-heading-6">
+        <button type="button" class="flex items-center justify-between w-full px-4 py-4 font-medium text-gray-900 bg-white hover:bg-gray-50 gap-3"
+          data-accordion-target="#accordion-example-body-6" aria-expanded="false" aria-controls="accordion-example-body-6">
+          <span class="text-left text-sm">Où trouver plus d'information sur le tournage ?</span>
+          <svg data-accordion-icon class="w-4 h-4 shrink-0 transition-transform duration-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-example-body-6" class="hidden" aria-labelledby="accordion-example-heading-6">
+        <div class="px-4 py-4 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
+          <p>Le site officiel du Warner Bros. Studio Tour London et la plateforme Wizarding World proposent des articles et vidéos détaillant les coulisses de la production.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 text-gray-300 py-6 px-4 sm:px-8">
+    <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+
+      <div class="flex items-center gap-6">
+        <a href="tel:+0000000000" class="flex items-center gap-2 hover:text-gray-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+          </svg>
+          <span class="underline">+000 000 0000</span>
+        </a>
+
+        <a href="mailto:votre@nom.com" class="flex items-center gap-2 hover:text-gray-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+            <path d="M3 7l9 6l9 -6" />
+          </svg>
+          <span class="underline">votre@nom.com</span>
+        </a>
+      </div>
+
+      <div class="text-sm">
+        Votre nom
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href="https://www.facebook.com/votre-nom" aria-label="Facebook" class="hover:text-gray-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/votre-nom" aria-label="LinkedIn" class="hover:text-gray-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M8 11v5" />
+            <path d="M8 8v.01" />
+            <path d="M12 16v-5" />
+            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+          </svg>
+        </a>
+
+        <a href="https://www.twitter.com/votre-nom" aria-label="Twitter" class="hover:text-gray-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z" />
+          </svg>
+        </a>
+
+        <a href="https://www.instagram.com/votre-nom" aria-label="Instagram" class="hover:text-gray-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="4" width="16" height="16" rx="4" />
+            <circle cx="12" cy="12" r="3" />
+            <circle cx="16.5" cy="7.5" r="1" fill="currentColor" stroke="none" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <hr class="my-6 border-gray-700">
+    <p class="text-sm text-gray-500 text-center text-tramsform uppercase">
+      cegep de trois-rivieres 2026 - <a href="https://www.cegeptr.qc.ca/"
+        class="text-gray-400 hover:text-gray-600">cegeptr.qc.ca</a>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/flowbite@2.3.0/dist/flowbite.min.js"></script>
+  <script src="/js/accordeon.js"></script>
+</body>
+
 </html>
