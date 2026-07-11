@@ -1,1 +1,62 @@
+<<<<<<< emilie
+     .tournage-bloc__media {
+      --tournage-grayscale: 100%;
+      --tournage-grayscale-hover: 0%;
+      --tournage-filter-duration: 0.5s;
+      overflow: hidden;
+    }
+ 
+    .tournage-bloc__image {
+      transition: transform 0.4s ease, filter var(--tournage-filter-duration) ease;
+      animation: fadeInUp 0.6s ease both;
+      filter: grayscale(var(--tournage-grayscale));
+      object-fit: cover;
+    width: 200px;
+    height: 500px;
+    }
+ 
+    .tournage-bloc__media:hover .tournage-bloc__image {
+      transform: scale(1.05);
+      filter: grayscale(var(--tournage-grayscale-hover));
+    }
+ 
+    /* BEM - Bloc "tournage-item" (chaque photo de la grille) */
+    .tournage-item {
+      --tournage-grayscale: 100%;
+      --tournage-grayscale-hover: 0%;
+      --tournage-filter-duration: 0.5s;
+      overflow: hidden;
+    }
+ 
+    .tournage-item__image {
+      transition: transform 0.35s ease, filter var(--tournage-filter-duration) ease;
+      animation: fadeInUp 0.6s ease both;
+      filter: grayscale(var(--tournage-grayscale));
+    }
+ 
+    .tournage-item:hover .tournage-item__image {
+      transform: scale(1.08);
+      filter: grayscale(var(--tournage-grayscale-hover));
+    }
+ 
+    /* Décalage progressif (stagger) de l'animation d'entrée pour la grille */
+    .tournage-galerie .tournage-item:nth-child(1) .tournage-item__image { animation-delay: 0.05s; }
+    .tournage-galerie .tournage-item:nth-child(2) .tournage-item__image { animation-delay: 0.10s; }
+    .tournage-galerie .tournage-item:nth-child(3) .tournage-item__image { animation-delay: 0.15s; }
+    .tournage-galerie .tournage-item:nth-child(4) .tournage-item__image { animation-delay: 0.20s; }
+    .tournage-galerie .tournage-item:nth-child(5) .tournage-item__image { animation-delay: 0.25s; }
+    .tournage-galerie .tournage-item:nth-child(6) .tournage-item__image { animation-delay: 0.30s; }
+ 
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+=======
 @import "tailwindcss";
+>>>>>>> main
