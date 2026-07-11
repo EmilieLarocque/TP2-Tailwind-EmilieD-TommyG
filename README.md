@@ -31,7 +31,7 @@
  
 | Nom | Élément | Description |
 |---|---|---|
-| fadeInUp | Images (hero + galerie, page Tournage) | Apparition en fondu avec léger déplacement vers le haut au chargement |
+| fadeInUp | Images (principale + galerie, page Tournage) | Apparition en fondu avec léger déplacement vers le haut au chargement |
 | pulseButton | Bouton "En savoir plus" (page Tournage) | Pulsation + halo lumineux au survol |
 
 ## Répartition des tâches
