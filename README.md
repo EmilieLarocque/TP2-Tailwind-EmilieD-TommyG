@@ -10,7 +10,7 @@
 
 **Date de remise :** Vendredi 10 juillet 2026
 
-**Lien du dépot Github :** 
+**Lien du dépot Github :** https://github.com/EmilieLarocque/TP2-Tailwind-EmilieD-TommyG
 
 ## Composants Tailwind / Flowbite utilisés
  
