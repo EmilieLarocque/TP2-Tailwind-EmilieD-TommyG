@@ -18,14 +18,14 @@
 |---|---|---|
 | Barre de navigation | Toutes les pages | Nav responsive avec menu hamburger sur mobile |
 | Accordéon | Tournage (FAQ) | 6 questions/réponses réparties sur 2 colonnes, initialisé par de Flowbite v2.3.0 |
-| Carrousel | Accueil | *(à compléter)* |
+| Carrousel | Accueil | Carrousel de 5 photos |
 
 ## Animations JavaScript
  
 | Nom | Élément | Description |
 |---|---|---|
 | Compteur animé | Statistiques du tournage (8, 7,7G$, 24, 12) | déclenche le comptage progressif de 0 jusqu'à la valeur finale |
-| *(2e animation)* | Accueil | *(à compléter)* |
+| Bouton envoyer animé | Accueil | Bouton Envoyer l'adresse courriel avec temps de loading et crochet pour indiquer que c'est fait |
 
 ## Animations CSS
  
@@ -33,7 +33,6 @@
 |---|---|---|
 | fadeInUp | Images (hero + galerie, page Tournage) | Apparition en fondu avec léger déplacement vers le haut au chargement |
 | pulseButton | Bouton "En savoir plus" (page Tournage) | Pulsation + halo lumineux au survol |
-| *(2e animation)* | Accueil | *(à compléter)* |
 
 ## Répartition des tâches
  
